@@ -19,10 +19,6 @@ int main(void)
 			putchar(low);
 			putchar(' ');
 		}
-		else
-		{
-			putchar(low);
-		}
 	}
 
 	return (0);
