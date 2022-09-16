@@ -16,7 +16,8 @@ int main(void)
 	{	
 		if (low == 'z')
 		{
-			putchar(low );
+			putchar(low);
+			putchar(' ');
 		}
 		else
 		{
