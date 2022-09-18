@@ -37,7 +37,7 @@ void putformat(int n)
 	{
 		_putchar(n + '0');
 	}	
-	else if (n <= 9)
+	else if (0 < n <= 9)
 	{
 		_putchar(',');
 		_putchar(' ');
