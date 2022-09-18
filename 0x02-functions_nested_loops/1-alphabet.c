@@ -1,6 +1,6 @@
-#include "holberton.h"
+#include <holberton.h>
 #include <stdio.h>
-#include "main.h"
+#include <main.h>
 
 /**
  * print_alphabet - Check description
