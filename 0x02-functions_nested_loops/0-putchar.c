@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "_putchar.h"
 
 /**
  * main - Check description
