@@ -1,6 +1,5 @@
 #include <unistd.h>
-#include "_putchar.h"
-#include "Main.h"
+#include "holberton.h"
 
 /**
  * main - Check description
@@ -9,10 +8,10 @@
  */
 int main(void)
 {
-	char word[8] = "_putchar";
+	char word[9] = "Holberton";
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 		_putchar(word[i]);
 	_putchar('\n');
 
