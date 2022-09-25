@@ -12,10 +12,10 @@
 int _strlen(char *s)
 {
     int i;
-
+    
     i = 0;
     while (s[i] != '\0')
-      i++;
+        i++;
     return (i);
 }
 
@@ -31,7 +31,7 @@ void rev_string(char *s)
 {
     int i, len;
     char a, z;
-
+    
     len = _strlen(s) - 1;
     i = 0;
     while (i < len)
