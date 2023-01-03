@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
+ * _strncat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ * @n: times to iterations
  *
- *concatenate two strings
- *
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
