@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  *
  *concatenate two strings
  *
