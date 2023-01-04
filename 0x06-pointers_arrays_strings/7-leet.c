@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * A program to encode the str
+ * @str: the string to encode
  *
  * return the value str
  */
