@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * @str: the string to encode
  *
