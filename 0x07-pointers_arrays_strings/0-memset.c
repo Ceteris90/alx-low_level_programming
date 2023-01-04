@@ -7,15 +7,15 @@
  *
  * Return: the memory area of s
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(void *s, int c, size_t n)
 {
-	unsigned int i = 0;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-	while (i < n)
-	{
-		s[i] = b;
-		i++;
-	}
+	for (index = 0; index < n; index++)
+		memory[index] = value;
+
+
 	return (s);
 
 
