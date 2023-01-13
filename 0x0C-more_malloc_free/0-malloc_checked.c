@@ -9,9 +9,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *allocate;
 
-	allocate = malloc(b);
+	void *allocate = malloc(b);
 
 	if (allocate == NULL)
 	{
