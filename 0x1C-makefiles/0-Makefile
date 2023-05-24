@@ -1,16 +1,13 @@
 # Makefile
 
-# Name of the executable
-EXECUTABLE = school
-
 # Rule: all
-all: $(EXECUTABLE)
+all: school
 
 # Rule to build the executable
-$(EXECUTABLE):
-    gcc -o $(EXECUTABLE) main.c
+school: main.c school.c
+	gcc main.c school.c -o school
 
 # Clean rule to remove the executable
 clean:
-    rm -f $(EXECUTABLE)
+	rm -f school
 
