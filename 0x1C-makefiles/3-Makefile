@@ -28,15 +28,13 @@ $(NAME): $(OBJ)
 
 # Rule: clean
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(NAME) *~ \#*\#
 
 # Rule: oclean
-oclean:
-	$(RM) $(OBJ)
+oclean: clean
 
 # Rule: fclean
 fclean: clean
-	$(RM) $(NAME)
 
 # Rule: re
 re: fclean all
