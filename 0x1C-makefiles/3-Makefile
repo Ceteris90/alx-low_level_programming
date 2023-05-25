@@ -1,40 +1,19 @@
-# Makefile
-
-# Compiler
 CC = gcc
-
-# Source files
 SRC = main.c school.c
-
-# Object files
 OBJ = $(SRC:.c=.o)
-
-# Name of the executable
 NAME = school
-
-# Program to delete files
 RM = rm -f
 
-# Rule: all
-all: $(NAME)
-
-# Rule to build the executable
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to compile source files into object files
-%.o: %.c
-	$(CC) -c $< -o $@
-
-# Rule: clean
 clean:
 	$(RM) *~ $(NAME)
 
-# Rule: oclean
-oclean: clean
+oclean:
+	$(RM) $(OBJ)
 
-# Rule: fclean
 fclean: clean oclean
 
-# Rule: re
-re: fclean all
+re: oclean all
+
