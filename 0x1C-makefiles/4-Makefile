@@ -4,13 +4,13 @@
 CC = gcc
 
 # Source files
-SRC = main.c holberton.c
+SRC = main.c school.c
 
 # Object files
 OBJ = $(SRC:.c=.o)
 
 # Name of the executable
-NAME = holberton
+NAME = school
 
 # Program to delete files
 RM = rm -f
