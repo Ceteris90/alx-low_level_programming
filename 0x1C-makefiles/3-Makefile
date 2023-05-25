@@ -4,7 +4,7 @@
 CC = gcc
 
 # Source files
-SRC = main.c holberton.c
+SRC = main.c school.c
 
 # Object files
 OBJ = $(SRC:.c=.o)
@@ -28,13 +28,13 @@ $(NAME): $(OBJ)
 
 # Rule: clean
 clean:
-	$(RM) $(OBJ) $(NAME) *~ \#*\#
+	$(RM) *~ $(NAME)
 
 # Rule: oclean
 oclean: clean
 
 # Rule: fclean
-fclean: clean
+fclean: clean oclean
 
 # Rule: re
 re: fclean all
